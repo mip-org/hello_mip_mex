@@ -26,8 +26,8 @@ void mexFunction(int nlhs, mxArray *plhs[],
     if (mxGetNumberOfElements(prhs[1]) != n)
         mexErrMsgIdAndTxt("mex_dot:dimMismatch", "Inputs must have the same number of elements.");
 
-    a = mxGetDoubles(prhs[0]);
-    b = mxGetDoubles(prhs[1]);
+    a = mxGetPr(prhs[0]);
+    b = mxGetPr(prhs[1]);
 
     sum = 0.0;
     for (i = 0; i < n; i++) {
