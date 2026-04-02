@@ -1,0 +1,14 @@
+name: hello_mip_mex
+description: "A simple test package demonstrating MEX compilation"
+version: "main"
+license: MIT
+homepage: "https://github.com/mip-org/hello_mip_mex"
+repository: "https://github.com/mip-org/hello_mip_mex"
+dependencies: []
+
+addpaths:
+  - path: "."
+
+builds:
+  - architectures: [linux_x86_64, macos_x86_64, macos_arm64]
+    compile_script: compile.m
