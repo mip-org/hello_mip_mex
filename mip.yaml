@@ -6,7 +6,7 @@ homepage: "https://github.com/mip-org/hello_mip_mex"
 repository: "https://github.com/mip-org/hello_mip_mex"
 dependencies: []
 
-addpaths:
+paths:
   - path: "."
 
 builds:
